@@ -1,5 +1,5 @@
 function finddata() {
-    console.log(document.cookie);
+    console.log("wel-come");
     let value = document.getElementById("org-id").value;
     console.log(value)
     
