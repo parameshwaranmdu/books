@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Zoho-login</title>
+    <link rel="stylesheet" href="loginpage.css">
+    <script src="getdata.js"></script>
+</head>
+
+<body onload="getaccesstoken()">
+    <h3>767183177</h3>
+    <div class="containers">
+        <div id="textbox" class="div-textalign">
+
+            <label class="lable-style">Enter Organization Id</label>
+            <input id="org-id" type="text" class="form-control ">
+            <br>
+            <br>
+            <div>
+                <button onclick="finddata()" class="btn-style">submit</button>
+            </div>
+            <h4 id="err-meg"></h4>
+        </div>
+        <div id="cus_selectbox" class="div-textalign">
+
+            <label class="lable-style ">Select Name</label>
+
+            <div id="listcustomers" class="selectbox-width">
+
+            </div>
+        </div>
+        <br>
+        <div id="item_selectbox" class="div-textalign">
+
+            <label class="lable-style">Select items</label>
+
+            <div id="listitems" class="selectbox-width">
+
+            </div>
+        </div>
+        <br>
+        <div id="loading-img" class="loading-imgstyle">
+            <img src="loading2.gif" width="24%">
+        </div>
+        <br>
+        <div class="selectbox-container">
+            <button class="btn-style invoice-btn" id="invoice-btn" onclick="openinvoice()">create-invoice</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
